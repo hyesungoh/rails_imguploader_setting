@@ -1,0 +1,11 @@
+<h1>index</h1>
+<a href="/posts/new">posting</a>
+<% @posts.each do |post| %>
+    <p><%= post.title %></p>
+    <p><%= post.content %></p>
+    
+    <% unless post.img_url.nil? %>
+        <img src="<%= post.img_url %>" />
+    <% end %>
+    <p> ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ </p>
+<% end %>
